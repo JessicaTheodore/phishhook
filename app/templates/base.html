@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}Spot the Hook{% endblock %}</title>
+<link rel="stylesheet" href="/static/style.css?v=4">
+<div class="topbar"><div class="in"><div class="logo">🎣 Spot the Hook</div>
+<nav><a href="/" class="{{ 'on' if page=='game' }}">Game</a><a href="/dashboard" class="{{ 'on' if page=='dash' }}">Dashboard</a>
+<a class="off">Reports</a><a class="off">Team view</a><a class="off">Settings</a></nav></div></div>
+<div class="wrap">{% block body %}{% endblock %}</div>
+{% block script %}{% endblock %}</html>

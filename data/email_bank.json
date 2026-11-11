@@ -1,0 +1,848 @@
+[
+  {
+    "id": "9c60ec64",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll statement is ready. View it here: http://fabrikam-payroll-secure.example.invalid/login",
+    "cues": [
+      "login link on unrelated domain",
+      "link text says one domain but points to another",
+      "raw IP/odd URL",
+      "misspelled domain"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "98cd8ddc",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Tailspin Shipping",
+    "from": "support@tailspin-shipping.example.invalid",
+    "subject": "Action needed: Tailspin Shipping",
+    "body": "Your Tailspin Shipping statement is ready. View it here: http://tailspin-shipping-secure.example.invalid/login",
+    "cues": [
+      "login link on unrelated domain",
+      "raw IP/odd URL",
+      "link text says one domain but points to another",
+      "misspelled domain"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "64868ed3",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Contoso Cloud",
+    "from": "support@contoso-cloud.example.invalid",
+    "subject": "Action needed: Contoso Cloud",
+    "body": "Your Contoso Cloud statement is ready. View it here: http://contoso-cloud-secure.example.invalid/login",
+    "cues": [
+      "raw IP/odd URL",
+      "login link on unrelated domain",
+      "misspelled domain",
+      "link text says one domain but points to another"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "c6dbcbec",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll statement is ready. View it here: http://fabrikam-payroll-secure.example.invalid/login",
+    "cues": [
+      "link text says one domain but points to another",
+      "login link on unrelated domain",
+      "raw IP/odd URL"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "ae5bce11",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll statement is ready. View it here: http://fabrikam-payroll-secure.example.invalid/login",
+    "cues": [
+      "login link on unrelated domain",
+      "misspelled domain",
+      "link text says one domain but points to another"
+    ],
+    "premise_alignment": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "f369d450",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll statement is ready. View it here: http://fabrikam-payroll-secure.example.invalid/login",
+    "cues": [
+      "login link on unrelated domain",
+      "misspelled domain",
+      "raw IP/odd URL"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "288c9076",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Your Northwind Bank statement is ready. View it here: http://northwind-bank-secure.example.invalid/login",
+    "cues": [
+      "raw IP/odd URL",
+      "misspelled domain"
+    ],
+    "premise_alignment": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "65eef859",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Contoso Cloud",
+    "from": "support@contoso-cloud.example.invalid",
+    "subject": "Action needed: Contoso Cloud",
+    "body": "Your Contoso Cloud statement is ready. View it here: http://contoso-cloud-secure.example.invalid/login",
+    "cues": [
+      "raw IP/odd URL",
+      "link text says one domain but points to another"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "b7bdb104",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Your Northwind Bank statement is ready. View it here: http://northwind-bank-secure.example.invalid/login",
+    "cues": [
+      "raw IP/odd URL",
+      "login link on unrelated domain"
+    ],
+    "premise_alignment": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "3be6f8e9",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll statement is ready. View it here: http://fabrikam-payroll-secure.example.invalid/login",
+    "cues": [
+      "misspelled domain"
+    ],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "8312e553",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Contoso Cloud",
+    "from": "support@contoso-cloud.example.invalid",
+    "subject": "Action needed: Contoso Cloud",
+    "body": "Your Contoso Cloud statement is ready. View it here: http://contoso-cloud-secure.example.invalid/login",
+    "cues": [
+      "login link on unrelated domain"
+    ],
+    "premise_alignment": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "9997481e",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Your Northwind Bank statement is ready. View it here: http://northwind-bank-secure.example.invalid/login",
+    "cues": [
+      "misspelled domain"
+    ],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "5e57dcac",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Tailspin Shipping",
+    "from": "support@tailspin-shipping.example.invalid",
+    "subject": "Action needed: Tailspin Shipping",
+    "body": "Your Tailspin Shipping statement is ready. View it here: http://tailspin-shipping-secure.example.invalid/login",
+    "cues": [],
+    "premise_alignment": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "75b871d9",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Your Northwind Bank statement is ready. View it here: http://northwind-bank-secure.example.invalid/login",
+    "cues": [],
+    "premise_alignment": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "0111c8be",
+    "category": "fake_links",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll statement is ready. View it here: http://fabrikam-payroll-secure.example.invalid/login",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "381feb8c",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Tailspin Shipping",
+    "from": "support@tailspin-shipping.example.invalid",
+    "subject": "Action needed: Tailspin Shipping",
+    "body": "Your Tailspin Shipping account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "pressure to act now",
+      "short deadline",
+      "threatens account closure",
+      "ALL CAPS warning"
+    ],
+    "premise_alignment": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "ec6ba50a",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Your Northwind Bank account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "threatens account closure",
+      "pressure to act now",
+      "ALL CAPS warning",
+      "short deadline"
+    ],
+    "premise_alignment": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "d035f95f",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Contoso Cloud",
+    "from": "support@contoso-cloud.example.invalid",
+    "subject": "Action needed: Contoso Cloud",
+    "body": "Your Contoso Cloud account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "threatens account closure",
+      "short deadline",
+      "ALL CAPS warning",
+      "pressure to act now"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "cb58f2ed",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "short deadline",
+      "ALL CAPS warning",
+      "threatens account closure"
+    ],
+    "premise_alignment": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "2ba82129",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "ALL CAPS warning",
+      "short deadline",
+      "pressure to act now"
+    ],
+    "premise_alignment": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "1dd4c139",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Contoso Cloud",
+    "from": "support@contoso-cloud.example.invalid",
+    "subject": "Action needed: Contoso Cloud",
+    "body": "Your Contoso Cloud account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "ALL CAPS warning",
+      "threatens account closure",
+      "pressure to act now"
+    ],
+    "premise_alignment": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "526d40e8",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Tailspin Shipping",
+    "from": "support@tailspin-shipping.example.invalid",
+    "subject": "Action needed: Tailspin Shipping",
+    "body": "Your Tailspin Shipping account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "threatens account closure",
+      "pressure to act now"
+    ],
+    "premise_alignment": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "6f81f6c4",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "threatens account closure",
+      "short deadline"
+    ],
+    "premise_alignment": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "30f2d653",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "ALL CAPS warning",
+      "short deadline"
+    ],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "9bcbe39c",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Contoso Cloud",
+    "from": "support@contoso-cloud.example.invalid",
+    "subject": "Action needed: Contoso Cloud",
+    "body": "Your Contoso Cloud account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "pressure to act now"
+    ],
+    "premise_alignment": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "a82d5dd3",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "ALL CAPS warning"
+    ],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "26c074a2",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [
+      "threatens account closure"
+    ],
+    "premise_alignment": 3,
+    "difficulty": 4
+  },
+  {
+    "id": "4126555e",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "40bab5eb",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Your Fabrikam Payroll account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [],
+    "premise_alignment": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "367405af",
+    "category": "urgent_tone",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Your Northwind Bank account will be CLOSED in 24 hours unless you confirm your details immediately.",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "a189c307",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Hello, this is Fabrikam Payroll support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "generic greeting",
+      "free-mail address for a company",
+      "lookalike domain",
+      "display name does not match address"
+    ],
+    "premise_alignment": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "210ada38",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Contoso Cloud",
+    "from": "support@contoso-cloud.example.invalid",
+    "subject": "Action needed: Contoso Cloud",
+    "body": "Hello, this is Contoso Cloud support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "free-mail address for a company",
+      "display name does not match address",
+      "lookalike domain",
+      "generic greeting"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "53ffa877",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Hello, this is Northwind Bank support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "lookalike domain",
+      "display name does not match address",
+      "generic greeting",
+      "free-mail address for a company"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "71ec8e55",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Hello, this is Fabrikam Payroll support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "lookalike domain",
+      "generic greeting",
+      "display name does not match address"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "f3479d5c",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Hello, this is Northwind Bank support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "display name does not match address",
+      "free-mail address for a company",
+      "generic greeting"
+    ],
+    "premise_alignment": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "bd0f0c04",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Hello, this is Fabrikam Payroll support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "lookalike domain",
+      "generic greeting",
+      "display name does not match address"
+    ],
+    "premise_alignment": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "66427a5a",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Hello, this is Fabrikam Payroll support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "display name does not match address",
+      "lookalike domain"
+    ],
+    "premise_alignment": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "089fb103",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Hello, this is Fabrikam Payroll support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "free-mail address for a company",
+      "generic greeting"
+    ],
+    "premise_alignment": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "90c5c3ca",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Tailspin Shipping",
+    "from": "support@tailspin-shipping.example.invalid",
+    "subject": "Action needed: Tailspin Shipping",
+    "body": "Hello, this is Tailspin Shipping support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "lookalike domain",
+      "free-mail address for a company"
+    ],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "7177f7f1",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Hello, this is Fabrikam Payroll support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "display name does not match address"
+    ],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "cf7877f9",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Fabrikam Payroll",
+    "from": "support@fabrikam-payroll.example.invalid",
+    "subject": "Action needed: Fabrikam Payroll",
+    "body": "Hello, this is Fabrikam Payroll support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "lookalike domain"
+    ],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "251b97ac",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Hello, this is Northwind Bank support. Please review the policy update and reply with your employee ID.",
+    "cues": [
+      "generic greeting"
+    ],
+    "premise_alignment": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "2fafe31b",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Northwind Bank",
+    "from": "support@northwind-bank.example.invalid",
+    "subject": "Action needed: Northwind Bank",
+    "body": "Hello, this is Northwind Bank support. Please review the policy update and reply with your employee ID.",
+    "cues": [],
+    "premise_alignment": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "1b9cd524",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Tailspin Shipping",
+    "from": "support@tailspin-shipping.example.invalid",
+    "subject": "Action needed: Tailspin Shipping",
+    "body": "Hello, this is Tailspin Shipping support. Please review the policy update and reply with your employee ID.",
+    "cues": [],
+    "premise_alignment": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "b2563c1c",
+    "category": "spoofed_sender",
+    "is_phish": true,
+    "brand": "Contoso Cloud",
+    "from": "support@contoso-cloud.example.invalid",
+    "subject": "Action needed: Contoso Cloud",
+    "body": "Hello, this is Contoso Cloud support. Please review the policy update and reply with your employee ID.",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "663b37f2",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Team lunch Friday",
+    "body": "Hi all, we're getting lunch at noon Friday. Reply if you have dietary needs. - Dana",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "dedc817d",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Team lunch Friday",
+    "body": "Hi all, we're getting lunch at noon Friday. Reply if you have dietary needs. - Dana",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 3
+  },
+  {
+    "id": "a96e6080",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Password policy reminder",
+    "body": "As announced last month, passwords rotate quarterly. Use the portal you normally use; no action needed via email.",
+    "cues": [],
+    "premise_alignment": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "1a95b82a",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Team lunch Friday",
+    "body": "Hi all, we're getting lunch at noon Friday. Reply if you have dietary needs. - Dana",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 1
+  },
+  {
+    "id": "5ed1dea1",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Q4 planning notes",
+    "body": "Notes from today's planning meeting are in the shared drive. Let me know if I missed anything.",
+    "cues": [],
+    "premise_alignment": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "a671412d",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Password policy reminder",
+    "body": "As announced last month, passwords rotate quarterly. Use the portal you normally use; no action needed via email.",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 5
+  },
+  {
+    "id": "56e3317c",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Password policy reminder",
+    "body": "As announced last month, passwords rotate quarterly. Use the portal you normally use; no action needed via email.",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 1
+  },
+  {
+    "id": "09ca7e03",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Team lunch Friday",
+    "body": "Hi all, we're getting lunch at noon Friday. Reply if you have dietary needs. - Dana",
+    "cues": [],
+    "premise_alignment": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "c1c44a12",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Q4 planning notes",
+    "body": "Notes from today's planning meeting are in the shared drive. Let me know if I missed anything.",
+    "cues": [],
+    "premise_alignment": 3,
+    "difficulty": 5
+  },
+  {
+    "id": "02b6981e",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Team lunch Friday",
+    "body": "Hi all, we're getting lunch at noon Friday. Reply if you have dietary needs. - Dana",
+    "cues": [],
+    "premise_alignment": 4,
+    "difficulty": 5
+  },
+  {
+    "id": "2d62e655",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Team lunch Friday",
+    "body": "Hi all, we're getting lunch at noon Friday. Reply if you have dietary needs. - Dana",
+    "cues": [],
+    "premise_alignment": 2,
+    "difficulty": 5
+  },
+  {
+    "id": "ea22ad9e",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Q4 planning notes",
+    "body": "Notes from today's planning meeting are in the shared drive. Let me know if I missed anything.",
+    "cues": [],
+    "premise_alignment": 2,
+    "difficulty": 5
+  },
+  {
+    "id": "b6dbf7f3",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Password policy reminder",
+    "body": "As announced last month, passwords rotate quarterly. Use the portal you normally use; no action needed via email.",
+    "cues": [],
+    "premise_alignment": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "3be8375e",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Password policy reminder",
+    "body": "As announced last month, passwords rotate quarterly. Use the portal you normally use; no action needed via email.",
+    "cues": [],
+    "premise_alignment": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "1b3d4f32",
+    "category": "safe",
+    "is_phish": false,
+    "brand": "n/a",
+    "from": "colleague@company.example",
+    "subject": "Team lunch Friday",
+    "body": "Hi all, we're getting lunch at noon Friday. Reply if you have dietary needs. - Dana",
+    "cues": [],
+    "premise_alignment": 3,
+    "difficulty": 4
+  }
+]

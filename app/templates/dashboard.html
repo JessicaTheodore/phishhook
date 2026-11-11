@@ -1,0 +1,28 @@
+{% extends "base.html" %}{% block title %}Dashboard{% endblock %}{% block body %}
+<h1 class="page-title">Training dashboard</h1>
+<p class="sub">Updates every few seconds while you play.</p>
+<div id="d" class="card muted">Start a practice session on the Game page, then come back here.</div>
+<h2 style="margin-top:1.5rem">Planned add-ons</h2>
+<div class="soon-grid" id="soon"></div>
+{% endblock %}{% block script %}<script>
+const NAMES={fake_links:'Fake links',urgent_tone:'Urgent tone',spoofed_sender:'Spoofed sender',safe:'Safe emails'};
+const SOON=[['📈','Progress over time','Accuracy and miss rate across rounds and sessions.'],['🎯','Difficulty breakdown','Accuracy at each Phish Scale level.'],['⏱️','Response time','Speed vs. accuracy per email.'],
+['👥','Team / cohort view','Anonymous comparison and team-wide weak spots.'],['⬇️','Export CSV','Download results for the report or client.'],['🤖','AI explanations','LLM explains why an answer was wrong.']];
+soon.innerHTML=SOON.map(([i,t,p])=>`<div class="soon"><span class="badge">Soon</span><span class="ic">${i}</span><b>${t}</b><p>${p}</p></div>`).join('');
+const col=m=>m>=.5?'var(--bad)':m>=.3?'var(--warn)':'var(--good)';
+async function go(){const pid=localStorage.pid;if(!pid)return;
+ const r=await fetch('/api/stats/'+pid);if(!r.ok){d.textContent='Session not found (server restarted?). Start a new session on the Game page.';return}
+ const s=await r.json(),cats=Object.entries(s.categories).sort((a,b)=>b[1].miss-a[1].miss);
+ d.className='';d.innerHTML=`
+ <div class="stats"><div class="stat"><b>${s.rounds}</b><small>Rounds played</small></div><div class="stat"><b>${s.accuracy==null?'–':Math.round(s.accuracy*100)+'%'}</b><small>Overall accuracy</small></div>
+ <div class="stat"><b>${s.streak}</b><small>Current streak</small></div><div class="stat"><b>${s.best_streak}</b><small>Best streak</small></div></div>
+ <div class="cols"><div class="stack">
+  <div class="card"><h2>Weak spots (recent miss rate)</h2>${cats.map(([c,v])=>`<div class="bar-row"><span>${NAMES[c]}</span><div class="track"><div class="fill" style="width:${v.miss*100}%;background:${col(v.miss)}"></div></div><b>${Math.round(v.miss*100)}%</b></div>`).join('')}
+  <small class="muted">Starts at 50% (unknown) and moves with your recent answers.</small></div>
+  <div class="card"><h2>Accuracy by category</h2><table><tr><th>Category</th><th>Attempts</th><th>Correct</th><th>Accuracy</th></tr>
+  ${Object.entries(s.categories).map(([c,v])=>`<tr><td>${NAMES[c]}</td><td>${v.attempts}</td><td>${v.correct}</td><td>${v.attempts?Math.round(v.correct/v.attempts*100)+'%':'–'}</td></tr>`).join('')}</table></div></div>
+ <div class="stack">
+  <div class="card focus"><h2>Recommended focus</h2>${s.focus?`<b>${NAMES[s.focus]}</b> is your weakest area right now.<br><small class="muted">Mode: ${s.mode}</small>`:'Play a few rounds to find your weak spots.'}</div>
+  <div class="card"><h2>Last ${s.recent.length} answers</h2><div class="dots">${s.recent.map(h=>`<span class="dot ${h.correct?'g':'r'}" title="${NAMES[h.category]}"></span>`).join('')||'<span class="muted">None yet</span>'}</div></div></div></div>`}
+go();setInterval(go,3000)
+</script>{% endblock %}

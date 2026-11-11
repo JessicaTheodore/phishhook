@@ -1,0 +1,29 @@
+{% extends "base.html" %}{% block body %}
+<h1 class="page-title">Practice session</h1>
+<p class="sub">Decide whether each practice email is phishing or safe. All brands and links are fictional.</p>
+<div class="card" id="setup"><h2>Training mode</h2><div class="row">
+ <select id="mode"><option value="adaptive">Adaptive (targets your weak spots)</option><option value="random">Random</option><option value="fixed">Fixed hard difficulty</option><option value="rules">Rules-based baseline</option></select>
+ <button class="primary" onclick="start()">Start practice</button></div></div>
+<div id="game" hidden><div class="cols">
+ <div class="stack">
+  <div class="card"><h2>Incoming email</h2><div class="mail-head"><small>From: <span id="from"></span></small><h3 id="subj"></h3></div><div class="mail-body" id="body"></div></div>
+  <div class="row" id="btns"><button class="phish big" onclick="ans(true)">🚩 Phishing</button><button class="safe big" onclick="ans(false)">✅ Safe</button></div>
+  <div id="fb"></div><div><button class="primary" id="nx" onclick="load()" hidden>Next email →</button></div>
+ </div>
+ <div class="stack">
+  <div class="stat"><b id="sr">0</b><small>Round</small></div><div class="stat"><b id="ss">0</b><small>Correct</small></div><div class="stat"><b id="sk">0</b><small>Streak 🔥</small></div>
+  <div class="soon"><span class="badge">Soon</span><span class="ic">⏱️</span><b>Response timer</b><p>Track how long each decision takes.</p></div>
+  <div class="soon"><span class="badge">Soon</span><span class="ic">💡</span><b>Hints</b><p>Ask for a nudge before answering.</p></div>
+  <div class="soon"><span class="badge">Soon</span><span class="ic">🎚️</span><b>Confidence rating</b><p>Say how sure you are of each answer.</p></div>
+ </div></div></div>
+{% endblock %}{% block script %}<script>
+const NAMES={fake_links:'Fake links',urgent_tone:'Urgent tone',spoofed_sender:'Spoofed sender',safe:'Safe emails'};
+let pid,cur,round=0,score=0,streak=0;
+const J=(u,b)=>fetch(u,b?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)}:{}).then(r=>r.json());
+async function start(){pid=(await J('/api/start',{mode:mode.value})).player;localStorage.pid=pid;round=score=streak=0;setup.hidden=true;game.hidden=false;load()}
+async function load(){cur=await J('/api/next/'+pid);round++;sr.textContent=round;from.textContent=cur.from;subj.textContent=cur.subject;body.textContent=cur.body;fb.innerHTML='';nx.hidden=true;btns.hidden=false}
+async function ans(p){const r=await J('/api/answer/'+pid,{id:cur.id,says_phish:p});
+ score+=r.correct;streak=r.correct?streak+1:0;ss.textContent=score;sk.textContent=streak;btns.hidden=true;
+ const chips=r.cues.map(c=>`<span class="chip">🚩 ${c}</span>`).join('');
+ fb.innerHTML=`<div class="fb ${r.correct?'ok':'no'}"><b>${r.correct?'Correct!':'Missed it.'}</b> Category: ${NAMES[r.category]} · Difficulty ${r.difficulty}/5<br>${chips||'<span class="muted">No red flags: this was a legitimate email.</span>'}</div>`;nx.hidden=false}
+</script>{% endblock %}
